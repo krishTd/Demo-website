@@ -49,12 +49,12 @@ Email Address:::: <input name="email" required="" size="75" type="email"/>
       name: fullname 
     }); 
     // Placeholder for a Track call
-     if(activeElement.type === 'submit' && activeElement.name === 'submit')
+     if(activeElement.type === 'submit' && activeElement.value === 'submit')
     analytics.track('destination submitted', user, function() { 
       window.location.href = ""; 
     });
      
-     if(activeElement.type === 'submit' && activeElement.name === 'blog')
+     if(activeElement.type === 'submit' && activeElement.value === 'blog')
     analytics.track('view blog', user, function() { 
       window.location.href = ""; 
     });
