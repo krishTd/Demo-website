@@ -36,7 +36,8 @@ Email: <input name="email" required="" size="75" type="email"/>
       email: email, 
       name: fullname 
     }); 
-    // Placeholder for a Track call
+
+     if(activeElement.type === 'submit' && activeElement.value === 'submit')
     analytics.track('destination submitted', user, function() { 
       window.location.href = ""; 
     });
