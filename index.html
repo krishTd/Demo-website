@@ -26,7 +26,6 @@ Email : <input name="email" required="" size="75" type="email"/>
   analytics.load("glphE56N2esTn8trR0YFMugVmuF6d8Tu");
   analytics.page();
   }}();
-  function identify(e){ 
 
     e.preventDefault(); 
     var form = e.target; 
@@ -40,7 +39,7 @@ Email : <input name="email" required="" size="75" type="email"/>
       destination: 
       destination, 
       details: details 
-    }; 
+    
     // Placeholder for an Identify call
     analytics.identify(email, { 
       email: email, 
