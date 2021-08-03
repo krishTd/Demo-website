@@ -15,7 +15,7 @@
 <br><br><br> 
 Name: <input name="fullname" required="" size="75" type="text"/> 
 <br><br> 
-Email: <input name="email" required="" size="75" type="email"/> 
+Email : <input name="email" required="" size="75" type="email"/> 
 <br><br> <input name="submit" type="submit" value="submit"/> </form> 
 
 <script type="text/javascript"> 
@@ -47,9 +47,11 @@ Email: <input name="email" required="" size="75" type="email"/>
       name: fullname 
     }); 
     // Placeholder for a Track call
+    analytics.track('page viewed',{});
     analytics.track('destination submitted', user, function() { 
       window.location.href = ""; 
     });
+    
 
     // // Ecommerce Events
     // analytics.track('Products Searched', { 
